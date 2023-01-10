@@ -2,12 +2,16 @@ import React from "react";
 
 const SecondsCounter = (props) => {
 	return (
-	<> <h1>Contador: {props.numero1}</h1>
-    <h1>Contador: {props.numero2}</h1>
-    <h1>Contador: {props.numero3}</h1>
-    <h1>Contador: {props.numero4}</h1>
-    <h1>Contador: {props.numero5}</h1>
-    <h1>Contador: {props.numero6}</h1></>
+	<div className=" container fs-1 fw-bold d-flex flex-row">
+        <div className="cuadradito text-white bg-dark"><i className="far fa-clock"></i></div>
+        <div className="cuadradito text-white bg-dark">{props.numero1}</div>
+        <div className="cuadradito text-white bg-dark">{props.numero2}</div>
+        <div className="cuadradito text-white bg-dark">{props.numero3}</div>
+        <div className="cuadradito text-white bg-dark">{props.numero4}</div>
+        <div className="cuadradito text-white bg-dark">{props.numero4}</div>
+        <div className="cuadradito text-white bg-dark">{props.numero5}</div>
+        <div className="cuadradito text-white bg-dark">{props.numero6}</div>
+    </div>
        
 	);
 };
